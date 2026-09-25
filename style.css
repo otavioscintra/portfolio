@@ -89,46 +89,66 @@ body {
 }
 
 .Apresentacao {
+  display: flex;
+  align-items: center;
+  gap: 30px;
   font-family: 'Courier New', Courier, monospace;
   color: #4F9D93;
-  padding: 20px;
+  padding: 40px 25px;
 }
 
-.Apresentacao h1, 
+.foto-perfil {
+  width: 275px;
+  height: 275px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4F9D93;
+  flex-shrink: 0;
+  margin: 0 20px;
+}
+
+.Apresentacao h2, 
 .Apresentacao h3, 
 .Apresentacao h4 {
   overflow: hidden;
   white-space: nowrap;
-  margin: 0 0 10px 0;
   border-right: 3px solid transparent;
   width: 0;
 }
 
-.Apresentacao h1 {
-  animation: digitar 1.2s steps(30, end) forwards, mostrarBorda 0.01s linear forwards, piscar 0.4s step-end 3;
+.Apresentacao h2 {
+  animation: digitar1 1.2s steps(30, end) forwards;
+  font-size: 2.5rem;
+  margin: 20px 0 0 25px;
+  
 }
 
 .Apresentacao h3 {
-  animation: digitar 1.5s steps(45, end) forwards, mostrarBorda 0.01s linear forwards, piscar 0.4s step-end 4;
-  animation-delay: 1.3s, 1.3s, 1.3s;
+  animation: digitar2 1.5s steps(45, end) forwards;
+  font-size: 1.4rem;
+  margin: 0 0 0 25px;
 }
 
 .Apresentacao h4 {
-  animation: digitar 1.1s steps(30, end) forwards, mostrarBorda 0.01s linear forwards, piscar 0.4s step-end 3;
-  animation-delay: 2.9s, 2.9s, 2.9s;
+  animation: digitar3 1.1s steps(30, end) forwards;
+  font-size: 1.3rem;
+  margin: 0 0 0 25px;
 }
 
-@keyframes digitar {
-  to { width: 100%; }
+@keyframes digitar1 {
+  to { width: 31ch; }
 }
 
-@keyframes mostrarBorda {
-  to { border-color: #4F9D93; }
+@keyframes digitar2 {
+  to { width: 50ch; }
+}
+@keyframes digitar3 {
+  to { width: 34ch; }
 }
 
-@keyframes piscar {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: #4F9D93; }
-}
+
+
+
+
 
 
