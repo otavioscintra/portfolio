@@ -89,9 +89,6 @@ body {
 }
 
 .Apresentacao {
-  display: flex;
-  align-items: center;
-  gap: 30px;
   font-family: 'Courier New', Courier, monospace;
   color: #4F9D93;
   padding: 40px 25px;
@@ -107,8 +104,8 @@ body {
   margin: 0 20px;
 }
 
-.Apresentacao h2, 
-.Apresentacao h3, 
+.Apresentacao h2,
+.Apresentacao h3,
 .Apresentacao h4 {
   overflow: hidden;
   white-space: nowrap;
@@ -120,7 +117,6 @@ body {
   animation: digitar1 1.2s steps(30, end) forwards;
   font-size: 2.5rem;
   margin: 20px 0 0 25px;
-  
 }
 
 .Apresentacao h3 {
@@ -146,9 +142,79 @@ body {
   to { width: 34ch; }
 }
 
+@media (max-width: 767px) {
+  .texto-apresentacao {
+    text-align: center;
+    margin-top: 40px;
+  }
 
+  .foto-perfil {
+    width: 160px;
+    height: 160px;
+    margin: 0;
+  }
 
+  .Apresentacao h2,
+  .Apresentacao h3,
+  .Apresentacao h4 {
+    animation: none;
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
+    border-right: none;
+    margin-left: 0;
+  }
 
+  .Apresentacao h2 {
+    font-size: 1.6rem;
+  }
 
+  .Apresentacao h3 {
+    font-size: 1rem;
+  }
 
+  .Apresentacao h4 {
+    font-size: 0.95rem;
+  }
+}
 
+.sobreMim {
+  background-color: #1C1B1A;
+  padding: 70px 0;
+  scroll-margin-top: 80px;
+}
+
+.sobreMim h1 {
+  color: #4F9D93;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.bloco-texto {
+  margin-bottom: 36px;
+}
+
+.bloco-texto:last-child {
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  display: block;
+  color: #4F9D93;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 16px;
+  border-left: 2px solid #4F9D93;
+  margin-bottom: 12px;
+}
+
+.bloco-texto p {
+  color: #D8D4CC;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  margin: 0;
+}
