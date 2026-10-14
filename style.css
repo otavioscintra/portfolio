@@ -218,3 +218,100 @@ body {
   line-height: 1.75;
   margin: 0;
 }
+
+.cursos {
+  background-color: #1C1B1A;
+  padding: 70px 0;
+  scroll-margin-top: 80px;
+}
+
+.cursos h1 {
+  color: #4F9D93;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.bloco-cursos {
+  margin-bottom: 56px;
+}
+
+.bloco-cursos:last-child {
+  margin-bottom: 0;
+}
+
+.bloco-cursos .subtitulo {
+  margin-bottom: 24px;
+}
+
+.card-curso {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #232220;
+  border: 1px solid #34322F;
+  border-radius: 4px;
+  padding: 24px;
+  transition: border-color 0.2s ease;
+}
+
+.card-curso:hover {
+  border-color: #4F9D93;
+}
+
+.card-curso h3 {
+  color: #F2EFE9;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.card-curso p {
+  color: #D8D4CC;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.tecnologias {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #34322F;
+  color: #4F9D93;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 576px) {
+  .cursos {
+    padding: 50px 0;
+  }
+
+  .bloco-cursos {
+    margin-bottom: 40px;
+  }
+
+  .card-curso {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-curso {
+    transition: none;
+  }
+}
+
+.card-curso .origem {
+  color: #A9A49A;
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+ 
+.card-curso .status {
+  color: #A9A49A;
+  font-size: 0.82rem;
+  margin-bottom: 16px;
+}
