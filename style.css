@@ -314,53 +314,43 @@ body {
   margin-bottom: 45px;
 }
 
-.card-habilidade {
+.grade-tecnologias {
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  background-color: #232220;
-  border: 1px solid #34322F;
-  border-radius: 4px;
-  padding: 24px;
-  transition: border-color 0.2s ease;
-}
-
-.card-habilidade:hover {
-  border-color: #4F9D93;
-}
-
-.card-habilidade h3 {
-  color: #F2EFE9;
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
-  font-size: 1.15rem;
-  line-height: 1.35;
-  margin-bottom: 16px;
-}
-
-.lista-habilidades {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.lista-habilidades li {
-  color: #D8D4CC;
-  font-size: 0.9rem;
-  line-height: 1.75;
-  padding: 8px 0;
-  border-bottom: 1px solid #34322F;
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex: 0 0 140px;
+  min-height: 140px;
+  padding: 18px 10px 14px;
+  text-align: center;
+  background-color: #232220;
+  border-bottom: 2px solid #4F9D93;
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
 }
 
-.lista-habilidades li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+.tile-nome {
+  color: #4F9D93;
+  font-size: 0.82rem;
 }
 
-.lista-habilidades .nivel {
-  display: block;
-  color: #A9A49A;
-  font-size: 0.78rem;
+.icone {
+  margin: auto;
+  width: 55px;
+  height: 55px;
+  background-color: #4F9D93;
+  -webkit-mask: var(--icone) center / contain no-repeat;
+  mask: var(--icone) center / contain no-repeat;
 }
 
 @media (max-width: 767px) {
@@ -381,15 +371,5 @@ body {
 
   .linha-curso {
     padding: 22px 0;
-  }
-
-  .card-habilidade {
-    padding: 20px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .card-habilidade {
-    transition: none;
   }
 }
