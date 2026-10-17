@@ -353,6 +353,77 @@ body {
   mask: var(--icone) center / contain no-repeat;
 }
 
+.realizacoes {
+  background-color: #1C1B1A;
+  padding: 70px 0;
+  scroll-margin-top: 80px;
+}
+
+.realizacoes h1 {
+  color: #4F9D93;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  margin-bottom: 45px;
+}
+
+.card-realizacao {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  background-color: #232220;
+  border: 1px solid #34322F;
+  border-radius: 4px;
+  transition: border-color 0.25s ease;
+}
+
+.card-realizacao:hover {
+  border-color: #4F9D93;
+}
+
+.card-realizacao h3 {
+  color: #F2EFE9;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.card-realizacao .origem {
+  display: block;
+  color: #A9A49A;
+  font-size: 0.78rem;
+  margin-bottom: 12px;
+}
+
+.card-realizacao p {
+  color: #D8D4CC;
+  font-size: 0.9rem;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.card-realizacao p:last-child {
+  margin-bottom: 0;
+}
+
+.card-realizacao .chips {
+  margin-bottom: 20px;
+}
+
+.card-realizacao .btn-github {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.foto-realizacao {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 767px) {
   .linha-curso .col-md-4 {
     margin-bottom: 14px;
@@ -361,7 +432,8 @@ body {
 
 @media (max-width: 576px) {
   .cursos,
-  .habilidades {
+  .habilidades,
+  .realizacoes {
     padding: 50px 0;
   }
 
