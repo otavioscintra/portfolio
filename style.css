@@ -433,7 +433,8 @@ body {
 @media (max-width: 576px) {
   .cursos,
   .habilidades,
-  .realizacoes {
+  .realizacoes,
+  .ACP {
     padding: 50px 0;
   }
 
@@ -445,3 +446,125 @@ body {
     padding: 22px 0;
   }
 }
+.ACP {
+  background-color: #1C1B1A;
+  padding: 70px 0;
+  scroll-margin-top: 80px;
+}
+.ACP h1 {
+  color: #4F9D93;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.texto-acp {
+  color: #D8D4CC;
+  font-size: 0.98rem;
+  line-height: 1.75;
+  max-width: 52rem;
+  margin-bottom: 45px;
+}
+.linha-tempo {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 28px;
+  border-left: 1px solid #34322F;
+}
+.linha-tempo li {
+  position: relative;
+  padding-bottom: 16px;
+}
+.linha-tempo li:last-child {
+  padding-bottom: 0;
+}
+.linha-tempo li::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 28px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #1C1B1A;
+  border: 2px solid #4F9D93;
+}
+.item-tempo {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 24px;
+  background-color: #232220;
+  border: 1px solid #34322F;
+  border-radius: 4px;
+  transition: border-color 0.25s ease;
+}
+.item-tempo:hover {
+  border-color: #4F9D93;
+}
+.icone-tempo {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #34322F;
+  color: #4F9D93;
+  font-size: 1.15rem;
+}
+.corpo-tempo {
+  flex: 1;
+  min-width: 0;
+}
+.corpo-tempo h3 {
+  color: #F2EFE9;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.item-tempo .origem {
+  display: block;
+  color: #A9A49A;
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+.meta-tempo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+.status-chip {
+  border: 1px solid #35544f;
+  color: #4F9D93;
+  font-size: 0.78rem;
+  padding: 4px 10px;
+}
+.horas {
+  border: 1px solid #4F9D93;
+  color: #4F9D93;
+  font-size: 0.82rem;
+  padding: 4px 10px;
+}
+
+.ano-tempo {
+  color: #A9A49A;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .item-tempo {
+    flex-wrap: wrap;
+  }
+  .ano-tempo {
+    width: 100%;
+    margin-left: 0;
+    order: -1;
+  }
+}
+
