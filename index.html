@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Otávio Cintra, estudante de Desenvolvimento de Sistemas. Projetos em Python, HTML, CSS e JavaScript.">
   <title>Otávio Cintra</title>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar sticky-top">
-    <div class="container d-flex justify-content-between align-items-center">
+  <header class="sticky-top">
+  <nav class="navbar">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
 
       <a class="navbar-brand m-0" href="#">Otávio <span>Cintra</span></a>
 
-      <ul class="nav align-items-center">
+      <ul class="nav flex-wrap align-items-center">
         <li class="nav-item">
           <a class="nav-link" href="#sobre">Sobre mim</a>
         </li>
@@ -25,7 +29,7 @@
           <a class="nav-link" href="#habilidades">Habilidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#realizações">Realizações</a>
+          <a class="nav-link" href="#realizacoes">Realizações</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#cursos">Cursos</a>
@@ -34,7 +38,7 @@
           <a class="nav-link" href="#ACP">ACP</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-github btn-sm" href="https://github.com/otavioscintra" target="_blank">
+          <a class="btn btn-github btn-sm" href="https://github.com/otavioscintra" target="_blank" rel="noopener">
             <i class="bi bi-github"></i> <span class="d-none d-sm-inline">GitHub</span>
           </a>
         </li>
@@ -42,14 +46,16 @@
 
     </div>
   </nav>
+  </header>
 
-<div class="Apresentacao">
+<main>
+<section class="Apresentacao" aria-label="Apresentação">
   <div class="container-fluid">
     <div class="row align-items-center">
-        <div class=" col-md-8 texto-apresentacao">
-          <h2>Olá, eu me chamo Otávio Cintra.</h2>
-          <h3>Etec PFA - 1° Ano Desenvolvimento de Sistemas AMS</h3>
-          <h4>Python | HTML5 & CSS3 | JavaScript</h4>
+        <div class="col-md-8 texto-apresentacao">
+          <h1>Olá, eu me chamo Otávio Cintra.</h1>
+          <p class="cargo">Etec PFA - 1° Ano Desenvolvimento de Sistemas AMS</p>
+          <p class="stack">Python | HTML5 &amp; CSS3 | JavaScript</p>
         </div>
       <div class="col-md-4 d-flex justify-content-center">
         <img src="img/foto_portfolio.jpeg" alt="Foto de Otávio Cintra" class="foto-perfil">
@@ -58,11 +64,11 @@
     </div>
   </div>
 
-</div>
+</section>
 
-<div class="sobreMim" id="sobre">
+<section class="sobreMim" id="sobre">
   <div class="container">
-    <h1>Sobre Mim</h1>
+    <h2 class="h1">Sobre Mim</h2>
 
     <div class="row">
       <div class="col-lg-10">
@@ -91,11 +97,11 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="habilidades" id="habilidades">
+<section class="habilidades" id="habilidades">
   <div class="container">
-    <h1>Habilidades</h1>
+    <h2 class="h1">Habilidades</h2>
 
     <ul class="grade-tecnologias">
       <li class="tile">
@@ -124,11 +130,11 @@
       </li>
     </ul>
   </div>
-</div>
+</section>
 
-<div class="realizacoes" id="realizações">
+<section class="realizacoes" id="realizacoes">
   <div class="container">
-    <h1>Realizações</h1>
+    <h2 class="h1">Realizações</h2>
 
     <div class="bloco-cursos">
       <span class="subtitulo">Projetos</span>
@@ -152,7 +158,7 @@
             <p>Simulação de back-end bancário em Python, feita para estudo.
                Cadastra clientes, cada um com uma conta única, poupança ou corrente.
                Na poupança, o saque nunca passa do saldo.
-               Na corrente, passa, até um limite definido.</p>>
+               Na corrente, passa, até um limite definido.</p>
             <a class="btn btn-github btn-sm" href="https://github.com/otavioscintra/BancoSimples" target="_blank" rel="noopener">
               <i class="bi bi-github"></i> Ver repositório
             </a>
@@ -162,10 +168,8 @@
         <div class="col-md-6 col-lg-4">
           <article class="card-realizacao">
             <h3>Este portfólio</h3>
-            <p>É um site pessoal feito com HTML5, CSS3 e Bootstrap.
-              O layout se adapta de celular a desktop com media queries e Flexbox.
-               
-            </p>
+            <p>É um site pessoal feito com HTML5, CSS3, Bootstrap e JavaScript.
+              O layout se adapta de celular a desktop com media queries e Flexbox.</p>
             <a class="btn btn-github btn-sm" href="https://github.com/otavioscintra/portfolio" target="_blank" rel="noopener">
               <i class="bi bi-github"></i> Ver repositório
             </a>
@@ -183,7 +187,7 @@
           <article class="card-realizacao">
             <h3>Maratona de Programação</h3>
             <span class="origem">Etec PFA, 2026</span>
-            <p>Fui o Representante da equipe vencedora 5ª Maratona Interna de
+            <p>Fui o representante da equipe vencedora da 5ª Maratona Interna de
                Programação da Etec Pedro Ferreira Alves.
             </p>
           </article>
@@ -193,13 +197,18 @@
           <article class="card-realizacao">
             <h3>OBI</h3>
             <span class="origem">Olimpíada Brasileira de Informática, 2026</span>
-            <p>Na Olimpíada Brasileira de Informática na Modalidade Programação 
-              Nível 1, Fui classificado para a 2ª Fase, fazendo 200/300 pontos
-              na 1ª fase e 200/400 pontos na 2ª fase.
+            <p>Na Olimpíada Brasileira de Informática na Modalidade Programação
+              Nível 1 fui classificado para a 2ª Fase, tendo obtido o 277º lugar
+              entre 2923 participantes.
             </p>
-            <a class="btn btn-github btn-sm" href="https://github.com/otavioscintra/OBI_treinamento" target="_blank" rel="noopener">
-              <i class="bi bi-github"></i> Ver Material de Estudo
-            </a>
+            <div class="acoes-card">
+              <a class="btn btn-github btn-sm" href="https://github.com/otavioscintra/OBI_treinamento" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> Ver Material de Estudo
+              </a>
+              <button type="button" class="btn btn-github btn-sm" data-certificado="img/certificado_OBI.jpg">
+                <i class="bi bi-award"></i> Ver certificado
+              </button>
+            </div>
           </article>
         </div>
 
@@ -207,8 +216,8 @@
           <article class="card-realizacao">
             <h3>OBR</h3>
             <span class="origem">Olimpíada Brasileira de Robótica, 2026</span>
-            <p>Na Olimpíada Brasileira de Robótica na Modalidade Teórica 
-              Nível 5, Fui classificado para a 2ª Fase, fazendo 85 pontos
+            <p>Na Olimpíada Brasileira de Robótica na Modalidade Teórica
+              Nível 5, fui classificado para a 2ª Fase, fazendo 85 pontos
               na 1ª fase e 72 pontos na 2ª fase.
             </p>
           </article>
@@ -217,11 +226,11 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="cursos" id="cursos">
+<section class="cursos" id="cursos">
   <div class="container">
-    <h1>Cursos</h1>
+    <h2 class="h1">Cursos</h2>
 
     <div class="bloco-cursos">
       <span class="subtitulo">Curso Técnico</span>
@@ -386,15 +395,15 @@
     </div>
 
   </div>
-</div>
+</section>
 
-<div class="ACP" id="ACP">
+<section class="ACP" id="ACP">
   <div class="container">
-    <h1>ACP</h1>
+    <h2 class="h1">ACP</h2>
     <p class="texto-acp">
       ACP, ou Atividades de Contextualização Profissional,
       são 200 horas obrigatórias de imersão prática,
-      feitas com uma empresa parceira do AMS.
+      feitas com empresas parceiras do AMS.
     </p>
     <div class="bloco-cursos">
       <span class="subtitulo">Registros</span>
@@ -402,66 +411,77 @@
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mic"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Palestra da empresa BeeCloud no dia 12/03.</h3>
+              <h3>Palestra da empresa BeeCloud no dia 12/03</h3>
               <span class="origem">Diego Moreira</span>
               <div class="meta-tempo">
                 <span class="horas">Carga Horária de 2 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mic"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Palestra da empresa Infonacci no dia 21/03.</h3>
+              <h3>Palestra da empresa Infonacci no dia 21/03</h3>
               <span class="origem">Renan Costa Sbeghen</span>
               <div class="meta-tempo">
                 <span class="horas">Carga Horária de 2 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-calendar-event"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Evento "Startup Day 2026" do Sebrae no dia 08/04.</h3>
+              <h3>Evento "Startup Day 2026" do Sebrae no dia 08/04</h3>
               <span class="origem">Donos de Startups locais.</span>
               <div class="meta-tempo">
                 <span class="horas">Carga Horária de 4 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+              <button type="button" class="btn-certificado" data-certificado="img/certificado_evento1.jpg">
+                Ver certificado
+              </button>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-calendar-event"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Evento "Fatec Portas Abertas 2026" no dia 08/05.</h3>
+              <h3>Evento "Fatec Portas Abertas 2026" no dia 08/05</h3>
               <div class="meta-tempo">
                 <span class="horas">Carga Horária de 2 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mic"></i>
             </span>
             <div class="corpo-tempo">
               <h3>Palestra sobre "Primeiros Socorros" no dia 27/05</h3>
@@ -470,13 +490,15 @@
                 <span class="horas">Carga Horária de 1 Hora.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mortarboard"></i>
             </span>
             <div class="corpo-tempo">
               <h3>Curso "Inteligência Artificial Para Estudantes"</h3>
@@ -485,28 +507,38 @@
                 <span class="horas">Carga Horária de 4 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+              <button type="button" class="btn-certificado" data-certificado="img/certificado_curso1.jpg">
+                Ver certificado
+              </button>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mic"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Palestra sobre "A tecnologia evolui todos os dias" no dia 27/08.</h3>
+              <h3>Palestra sobre "A tecnologia evolui todos os dias" no dia 27/08</h3>
               <span class="origem">Mauro Roberto Pedreira Gonçalves</span>
               <div class="meta-tempo">
-                <span class="horas">Carga Horária de 2 Horas.</span>
+                <span class="horas">Carga Horária de 3 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+              <button type="button" class="btn-certificado" data-certificado="img/certificado_palestra2.jpg">
+                Ver certificado
+              </button>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mortarboard"></i>
             </span>
             <div class="corpo-tempo">
               <h3>Curso "Ética na Era da IA"</h3>
@@ -515,66 +547,77 @@
                 <span class="horas">Carga Horária de 2 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+              <button type="button" class="btn-certificado" data-certificado="img/certificado_curso2.jpg">
+                Ver certificado
+              </button>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mortarboard"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Curso "Fundamentos de TI: Hardware e Software".</h3>
+              <h3>Curso "Fundamentos de TI: Hardware e Software"</h3>
               <span class="origem">Fundação Bradesco Escola Virtual</span>
               <div class="meta-tempo">
                 <span class="horas">Carga Horária de 7 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+              <button type="button" class="btn-certificado" data-certificado="img/certificado_curso3.jpg">
+                Ver certificado
+              </button>
+            </div>
           </article>
         </li>
         <li>
           <article class="item-tempo">
             <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
+              <i class="bi bi-mic"></i>
             </span>
             <div class="corpo-tempo">
-              <h3>Palestra sobre "Carreira de TI: Onde estão as oportunidades 
-                e como construir uma carreira de sucesso" no dia 30/09.
-              </h3>
-              <span class="origem">Diego Moreira</span>
+              <h3>Palestra sobre "Carreira em TI: Onde estão as oportunidades
+                e como construir uma carreira de sucesso" no dia 30/09</h3>
+              <span class="origem">Elton Zaniboni</span>
               <div class="meta-tempo">
-                <span class="horas">Carga Horária de 2 Horas.</span>
+                <span class="horas">Carga Horária de 3 Horas.</span>
               </div>
             </div>
-            <span class="ano-tempo">2026</span>
-          </article>
-        </li>
-        <li>
-          <article class="item-tempo">
-            <span class="icone-tempo" aria-hidden="true">
-              <i class="bi bi-briefcase"></i>
-            </span>
-            <div class="corpo-tempo">
-              <h3>Preciso pedir as info.</h3>
-              <span class="origem"></span>
-              <div class="meta-tempo">
-                <span class="horas">Carga Horária de 2 Horas.</span>
-              </div>
+            <div class="lado-tempo">
+              <span class="ano-tempo">2026</span>
+              <button type="button" class="btn-certificado" data-certificado="img/certificado_palestra1.jpg">
+                Ver certificado
+              </button>
             </div>
-            <span class="ano-tempo">2026</span>
           </article>
         </li>
       </ol>
     </div>
   </div>
-</div>
+</section>
 
+</main>
 
-
+<footer class="rodape">
+  <div class="container">
+    <small>&copy; 2026 Otávio Cintra</small>
   </div>
+</footer>
 
+<div class="fundo-certificado" id="fundo-certificado" role="dialog" aria-modal="true" aria-label="Certificado" hidden>
+  <div class="caixa-certificado">
+    <button type="button" class="fechar-certificado" aria-label="Fechar certificado">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <img alt="Certificado">
+  </div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
