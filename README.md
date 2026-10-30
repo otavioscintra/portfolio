@@ -5,8 +5,8 @@ Projeto da avaliação prática de Programação Web 1 (PW1).
 
 ## Acesse online
 
-**Vercel:** https://otavioscintra.vercel.app
-**Repositório GitHub:** https://github.com/otavioscintra/portfolio
+- **Vercel:** https://otavioscintra.vercel.app
+- **Repositório GitHub:** https://github.com/otavioscintra/portfolio
 
 ## Tecnologias e bibliotecas
 
