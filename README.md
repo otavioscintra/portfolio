@@ -1,7 +1,8 @@
 # Portfólio Web — Otávio Cintra
 
-Site pessoal que apresenta minha formação, habilidades, projetos, competições e atividades complementares (ACP) com os certificados correspondentes.
-Projeto da avaliação prática de Programação Web 1 (PW1).
+Site pessoal que apresenta minha formação, habilidades, projetos, competições e atividades complementares (ACP), com os certificados correspondentes.
+É uma página única, com navegação por âncoras, que se adapta a celular, tablet e computador.
+Projeto da avaliação prática de Programação Web 1 (PW1), feito com HTML5, CSS3 e Bootstrap.
 
 ## Acesse online
 
@@ -11,21 +12,22 @@ Projeto da avaliação prática de Programação Web 1 (PW1).
 ## Tecnologias e bibliotecas
 
 - **HTML5** com estrutura semântica (`header`, `nav`, `main`, `section`, `article`, `footer`)
-- **CSS3** customizado: variáveis de cor fixas, Flexbox, media queries, `clip-path`, `mask` e animações
-- **Bootstrap 5.3.3**: grid, navbar, botões e utilitários
-- **Bootstrap Icons 1.11.3**
-- **JavaScript**: modal de visualização dos certificados
-- **Google Fonts**: DM Sans
-- **GitHub e GitHub** para versionamento
+- **CSS3** customizado: Flexbox, Grid, media queries, `clip-path`, `mask` e animações
+- **Bootstrap 5.3.3**: grid, navbar, botões e utilitários, carregado por CDN
+- **Bootstrap Icons 1.11.3**: ícones da navegação, da linha do tempo e dos botões, carregado por CDN
+- **JavaScript**: modal de visualização dos certificados, sem bibliotecas
+- **Google Fonts**: DM Sans no texto geral e Fraunces nos títulos das seções
+- **GitHub e GitHub Desktop** para versionamento
 - **Vercel** para deploy
 
 ## Seções do site
 
-- **Sobre Mim**: história e ambições
+- **Apresentação**: nome, curso e tecnologias, com foto e animação de digitação
+- **Sobre Mim**: minha história com a tecnologia e minhas ambições profissionais
 - **Habilidades**: Python, JavaScript, HTML5, CSS3, Bootstrap, Git e GitHub
-- **Realizações**: projetos e competições
-- **Cursos**: formação e cursos
-- **ACP**: atividades complementares, com certificados
+- **Realizações**: projetos (com links para os repositórios) e competições (Maratona, OBI e OBR)
+- **Cursos**: curso técnico, cursos complementares e o livro "Entendendo Algoritmos"
+- **ACP**: linha do tempo de palestras, eventos, cursos e projeto, com carga horária, total acumulado de horas e certificados
 
 ## Estrutura de arquivos
 
@@ -39,20 +41,20 @@ portfolio/
 ├── README.md
 └── img/
     ├── bootstrap.svg
-    ├── certificado_curso1.jpg
+    ├── css.svg
+    ├── git.svg
+    ├── html5.svg
+    ├── javascript.svg
+    ├── python.svg
+    ├── foto_portfolio.jpeg
+    ├── certificado_curso1.jpg  
     ├── certificado_curso2.jpg
     ├── certificado_curso3.jpg
     ├── certificado_evento1.jpg
     ├── certificado_OBI.jpg
     ├── certificado_palestra1.jpg
     ├── certificado_palestra2.jpg
-    ├── certificado_palestra3.jpg
-    ├── css.svg
-    ├── foto_portfolio.jpeg
-    ├── git.svg
-    ├── html5.svg
-    ├── javascript.svg
-    └── python.svg
+    └── certificado_palestra3.jpg
 ```
 
 ## Sobre o Autor
@@ -60,5 +62,5 @@ portfolio/
 **Otávio Cintra**
 
 - GitHub: [github.com/otavioscintra](https://github.com/otavioscintra)
-- LinkedIn: https://www.linkedin.com/in/otavio-silveira-cintra/
+- LinkedIn: [linkedin.com/in/otavio-silveira-cintra](https://www.linkedin.com/in/otavio-silveira-cintra/)
 - E-mail institucional: otavio.peris@aluno.cps.sp.gov.br
